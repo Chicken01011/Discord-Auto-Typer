@@ -11,7 +11,7 @@ class Main:
             {"content": "A rubber room with rats", "cooldown": 0.4},
             {"content": "And rats make me crazy.", "cooldown": 0.7}
         ]
-        channelId = '1133864754524463125'
+        channelId = 'CHANNELID'
         if repeat_times <= 0:
             while True:
                 for message_data in messages:
@@ -29,7 +29,7 @@ class Main:
 
     def send_message(self, channel_id, message):
         headers = {
-            "Authorization": "NTYzODQ4OTg3NjM2MDA2OTM0.GCvQwN.t8iVHIQMPq4tVNFD2PjFc4NPt_Uydwp-b4uUxk",
+            "Authorization": "TOKEN",
             "Content-Type": "application/json"
         }
         data = {"content": message}
